@@ -1,0 +1,144 @@
+/* style.css */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #6c757d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.info-btn {
+  padding: 0.5rem 1rem;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.instructions {
+  text-align: center;
+  margin: 1rem 0;
+  background-color: #e9ecef;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  display: none;
+  font-size: 1.2rem;
+}
+
+.instructions ul li {
+  font-size: 1.5rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 500px;
+  margin: 1rem 0;
+}
+
+.scoreboard h2 {
+  margin-bottom: 0.5rem;
+}
+
+#playerScore, #computerScore {
+  font-size: 2rem;
+  color: #17a2b8;
+}
+
+.hands-display {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 1rem 0;
+  height: 100px;
+}
+
+#playerSelect i, #computerSelect i {
+  font-size: 4rem;
+  color: #ffc107;
+  transition: all 0.3s ease;
+}
+
+.message {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.choice {
+  font-size: 3rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.choice:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  width: 100%;
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+}
+
+@keyframes bounceWin {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+@keyframes loseFade {
+  0% { opacity: 1; transform: rotate(0deg); }
+  100% { opacity: 0.3; transform: rotate(-20deg); }
+}
+
+.shake {
+  animation: shake 0.5s ease;
+}
+
+.win {
+  animation: bounceWin 0.5s ease;
+}
+
+.lose {
+  animation: loseFade 0.5s ease;
+}

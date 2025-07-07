@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2c6133bcaa.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Rock Paper Scissors</h1>
+    <button class="info-btn" onclick="toggleInstructions()">Instructions</button>
+  </header>
+
+  <div id="instructions" class="instructions">
+    <p>First to 5 wins!</p>
+    <ul>
+      <li>🪨 beats ✂️</li>
+      <li>✂️ beats 📄</li>
+      <li>📄 beats 🪨</li>
+      <li>Click a hand to play.</li>
+    </ul>
+  </div>
+
+  <div class="scoreboard">
+    <div>
+      <h2>Player</h2>
+      <div id="playerScore">0</div>
+    </div>
+    <div>
+      <h2>Computer</h2>
+      <div id="computerScore">0</div>
+    </div>
+  </div>
+
+  <div class="hands-display">
+    <div id="playerSelect"></div>
+    <div id="computerSelect"></div>
+  </div>
+
+  <div id="message" class="message"></div>
+
+  <div class="choices">
+    <div id="rock" class="choice"><i class="fas fa-hand-rock"></i></div>
+    <div id="paper" class="choice"><i class="fas fa-hand-paper"></i></div>
+    <div id="scissors" class="choice"><i class="fas fa-hand-scissors"></i></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Rock Paper Scissors Game</p>
+  </footer>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
